@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DinoVerse | The World of Dinosaurs</title>
+
+    <meta name="description"
+          content="Explore dinosaurs, their evolution, fossils, extinction and theories about the disappearance of the dinosaurs.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- ================= PRELOADER ================= -->
+
+<div id="preloader">
+    <div class="loader-dino">🦖</div>
+    <p>Unearthing the past...</p>
+</div>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <a href="#home" class="logo">
+        <span>🦖</span>
+        <strong>Dino<span>Verse</span></strong>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle">
+        ☰
+    </button>
+
+    <nav id="navMenu">
+        <a href="#home">Home</a>
+        <a href="#dinosaurs">Dinosaurs</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#extinction">Extinction</a>
+        <a href="#theories">Theories</a>
+        <a href="#fossils">Fossils</a>
+    </nav>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <div class="era-badge">
+            <span></span>
+            MESOZOIC ERA • 252–66 MILLION YEARS AGO
+        </div>
+
+        <h1>
+            ENTER THE
+            <span>LOST WORLD</span>
+        </h1>
+
+        <p>
+            Discover the incredible creatures that once ruled Earth,
+            explore their evolution, and uncover the mystery behind
+            their disappearance.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#dinosaurs" class="btn btn-primary">
+                Explore Dinosaurs →
+            </a>
+
+            <a href="#extinction" class="btn btn-outline">
+                The Great Extinction
+            </a>
+        </div>
+
+        <div class="hero-stats">
+
+            <div>
+                <strong>700+</strong>
+                <span>Known Species</span>
+            </div>
+
+            <div>
+                <strong>165M</strong>
+                <span>Years of Dominance</span>
+            </div>
+
+            <div>
+                <strong>66M</strong>
+                <span>Years Since Extinction</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="scroll-indicator">
+        <span>SCROLL TO EXPLORE</span>
+        ↓
+    </div>
+
+</section>
+
+
+<!-- ================= INTRO ================= -->
+
+<section class="intro section">
+
+    <div class="section-label">01 • THE DINOSAUR AGE</div>
+
+    <div class="intro-grid">
+
+        <div>
+            <h2>
+                A WORLD THAT
+                <span>NO LONGER EXISTS</span>
+            </h2>
+        </div>
+
+        <div>
+            <p class="large-text">
+                Dinosaurs appeared during the Triassic Period and
+                dominated terrestrial ecosystems for more than
+                160 million years.
+            </p>
+
+            <p>
+                They evolved into an extraordinary variety of shapes
+                and sizes — from tiny feathered hunters to gigantic
+                long-necked herbivores.
+            </p>
+
+            <a href="#timeline" class="text-link">
+                Explore their timeline →
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= DINOSAUR EXPLORER ================= -->
+
+<section class="dinosaurs section" id="dinosaurs">
+
+    <div class="section-heading">
+
+        <div>
+            <div class="section-label">02 • DINOSAUR DATABASE</div>
+
+            <h2>
+                MEET THE
+                <span>GIANTS</span>
+            </h2>
+        </div>
+
+        <p>
+            Explore some of the most fascinating dinosaurs
+            known from the fossil record.
+        </p>
+
+    </div>
+
+
+    <!-- FILTER -->
+
+    <div class="filters">
+
+        <button class="filter active" data-filter="all">
+            All
+        </button>
+
+        <button class="filter" data-filter="carnivore">
+            🦖 Carnivores
+        </button>
+
+        <button class="filter" data-filter="herbivore">
+            🌿 Herbivores
+        </button>
+
+        <button class="filter" data-filter="armored">
+            🛡 Armored
+        </button>
+
+        <button class="filter" data-filter="flying">
+            🦅 Flying
+        </button>
+
+    </div>
+
+
+    <div class="dino-grid" id="dinoGrid">
+
+        <!-- T-REX -->
+
+        <article class="dino-card" data-type="carnivore">
+
+            <div class="dino-image trex">
+                🦖
+                <span class="card-era">LATE CRETACEOUS</span>
+            </div>
+
+            <div class="dino-info">
+
+                <span class="scientific">
+                    Tyrannosaurus rex
+                </span>
+
+                <h3>Tyrannosaurus Rex</h3>
+
+                <p>
+                    One of the most famous predators ever discovered.
+                    T. rex possessed enormous jaws and powerful
+                    crushing teeth.
+                </p>
+
+                <div class="dino-data">
+                    <span>📏 12 m</span>
+                    <span>⚖ 8–14 tons</span>
+                    <span>🍖 Carnivore</span>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- TRICERATOPS -->
+
+        <article class="dino-card" data-type="herbivore">
+
+            <div class="dino-image triceratops">
+                🦕
+                <span class="card-era">LATE CRETACEOUS</span>
+            </div>
+
+            <div class="dino-info">
+
+                <span class="scientific">
+                    Triceratops horridus
+                </span>
+
+                <h3>Triceratops</h3>
+
+                <p>
+                    A three-horned herbivore protected by a massive
+                    skull and bony frill.
+                </p>
+
+                <div class="dino-data">
+                    <span>📏 9 m</span>
+                    <span>⚖ 6–12 tons</span>
+                    <span>🌿 Herbivore</span>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- VELOCIRAPTOR -->
+
+        <article class="dino-card" data-type="carnivore">
+
+            <div class="dino-image raptor">
+                🦎
+                <span class="card-era">LATE CRETACEOUS</span>
+            </div>
+
+            <div class="dino-info">
+
+                <span class="scientific">
+                    Velociraptor mongoliensis
+                </span>
+
+                <h3>Velociraptor</h3>
+
+                <p>
+                    A relatively small but highly specialized predator
+                    with a large sickle-shaped claw on each foot.
+                </p>
+
+                <div class="dino-data">
+                    <span>📏 2 m</span>
+                    <span>⚖ ~15 kg</span>
+                    <span>🍖 Carnivore</span>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- BRACHIOSAURUS -->
+
+        <article class="dino-card" data-type="herbivore">
+
+            <div class="dino-image brachio">
+                🦕
+                <span class="card-era">LATE JURASSIC</span>
+            </div>
+
+            <div class="dino-info">
+
+                <span class="scientific">
+                    Brachiosaurus
+                </span>
+
+                <h3>Brachiosaurus</h3>
+
+                <p>
+                    A towering sauropod with long forelimbs and an
+                    elevated head adapted for feeding on vegetation.
+                </p>
+
+                <div class="dino-data">
+                    <span>📏 18–21 m</span>
+                    <span>⚖ 30–60 tons</span>
+                    <span>🌿 Herbivore</span>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- STEGOSAURUS -->
+
+        <article class="dino-card" data-type="armored">
+
+            <div class="dino-image stego">
+                🦕
+                <span class="card-era">LATE JURASSIC</span>
+            </div>
+
+            <div class="dino-info">
+
+                <span class="scientific">
+                    Stegosaurus stenops
+                </span>
+
+                <h3>Stegosaurus</h3>
+
+                <p>
+                    Famous for its large plates along its back and
+                    four defensive spikes on its tail.
+                </p>
+
+                <div class="dino-data">
+                    <span>📏 7–9 m</span>
+                    <span>⚖ 3–7 tons</span>
+                    <span>🌿 Herbivore</span>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- ANKYLOSAURUS -->
+
+        <article class="dino-card" data-type="armored">
+
+            <div class="dino-image ankyl">
+                🦕
+                <span class="card-era">LATE CRETACEOUS</span>
+            </div>
+
+            <div class="dino-info">
+
+                <span class="scientific">
+                    Ankylosaurus magniventris
+                </span>
+
+                <h3>Ankylosaurus</h3>
+
+                <p>
+                    A heavily armored dinosaur equipped with bony
+                    plates and a powerful club-like tail.
+                </p>
+
+                <div class="dino-data">
+                    <span>📏 6–8 m</span>
+                    <span>⚖ 4–8 tons</span>
+                    <span>🌿 Herbivore</span>
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= TIMELINE ================= -->
+
+<section class="timeline section" id="timeline">
+
+    <div class="section-heading">
+
+        <div>
+            <div class="section-label">03 • DEEP TIME</div>
+
+            <h2>
+                THE
+                <span>MESOZOIC ERA</span>
+            </h2>
+        </div>
+
+        <p>
+            Follow the rise and transformation of dinosaurs
+            across geological time.
+        </p>
+
+    </div>
+
+
+    <div class="timeline-container">
+
+        <div class="timeline-line"></div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-date">
+                252–201 MYA
+            </div>
+
+            <div class="timeline-content">
+
+                <span>TRIASSIC</span>
+
+                <h3>The Beginning</h3>
+
+                <p>
+                    The first dinosaurs appeared during the Triassic
+                    Period. They were initially small and relatively
+                    uncommon compared with other reptiles.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-date">
+                201–145 MYA
+            </div>
+
+            <div class="timeline-content">
+
+                <span>JURASSIC</span>
+
+                <h3>Age of Giants</h3>
+
+                <p>
+                    Dinosaurs became dominant across many ecosystems.
+                    Giant sauropods such as Brachiosaurus and
+                    Diplodocus flourished.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-date">
+                145–66 MYA
+            </div>
+
+            <div class="timeline-content">
+
+                <span>CRETACEOUS</span>
+
+                <h3>The Final Chapter</h3>
+
+                <p>
+                    Dinosaurs reached incredible diversity. T. rex,
+                    Triceratops and many other species lived during
+                    this final period.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item extinction-point">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-date">
+                66 MYA
+            </div>
+
+            <div class="timeline-content">
+
+                <span>EXTINCTION</span>
+
+                <h3>The End of an Era</h3>
+
+                <p>
+                    A global mass extinction eliminated all
+                    non-avian dinosaurs while birds survived.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= EXTINCTION ================= -->
+
+<section class="extinction section" id="extinction">
+
+    <div class="extinction-content">
+
+        <div class="section-label">
+            04 • THE GREAT EXTINCTION
+        </div>
+
+        <h2>
+            WHAT
+            <span>HAPPENED?</span>
+        </h2>
+
+        <p>
+            Around 66 million years ago, approximately 75% of Earth's
+            species disappeared during the Cretaceous–Paleogene
+            extinction event.
+        </p>
+
+        <div class="impact-facts">
+
+            <div>
+                <strong>66M</strong>
+                <span>Years Ago</span>
+            </div>
+
+            <div>
+                <strong>75%</strong>
+                <span>Species Lost</span>
+            </div>
+
+            <div>
+                <strong>10 km</strong>
+                <span>Asteroid Estimate</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="impact-visual">
+
+        <div class="asteroid">☄</div>
+
+        <div class="earth">
+            🌎
+        </div>
+
+        <div class="impact-ring ring-1"></div>
+        <div class="impact-ring ring-2"></div>
+        <div class="impact-ring ring-3"></div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= THEORIES ================= -->
+
+<section class="theories section" id="theories">
+
+    <div class="section-heading">
+
+        <div>
+            <div class="section-label">05 • THE MYSTERY</div>
+
+            <h2>
+                WHY DID
+                <span>DINOSAURS DISAPPEAR?</span>
+            </h2>
+        </div>
+
+        <p>
+            Scientists have proposed several explanations.
+            The evidence strongly supports an asteroid impact,
+            while other environmental events may have contributed.
+        </p>
+
+    </div>
+
+
+    <div class="theory-grid">
+
+
+        <!-- ASTEROID -->
+
+        <article class="theory-card featured">
+
+            <div class="theory-number">
+                01
+            </div>
+
+            <div class="theory-icon">
+                ☄️
+            </div>
+
+            <h3>Asteroid Impact</h3>
+
+            <span class="evidence strong">
+                ★★★★★ STRONG EVIDENCE
+            </span>
+
+            <p>
+                A large asteroid struck the region of present-day
+                Yucatán Peninsula, creating the Chicxulub crater.
+            </p>
+
+            <div class="theory-details">
+
+                <div>
+                    <strong>Impact</strong>
+                    <span>Chicxulub</span>
+                </div>
+
+                <div>
+                    <strong>Age</strong>
+                    <span>~66 MYA</span>
+                </div>
+
+                <div>
+                    <strong>Result</strong>
+                    <span>Global disruption</span>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- VOLCANO -->
+
+        <article class="theory-card">
+
+            <div class="theory-number">
+                02
+            </div>
+
+            <div class="theory-icon">
+                🌋
+            </div>
+
+            <h3>Massive Volcanism</h3>
+
+            <span class="evidence medium">
+                ★★★★☆ IMPORTANT FACTOR
+            </span>
+
+            <p>
+                The Deccan Traps in India produced enormous volcanic
+                eruptions around the same geological period.
+            </p>
+
+            <div class="theory-details">
+
+                <div>
+                    <strong>Location</strong>
+                    <span>India</span>
+                </div>
+
+                <div>
+                    <strong>Effect</strong>
+                    <span>Climate change</span>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- CLIMATE -->
+
+        <article class="theory-card">
+
+            <div class="theory-number">
+                03
+            </div>
+
+            <div class="theory-icon">
+                🌡️
+            </div>
+
+            <h3>Climate Change</h3>
+
+            <span class="evidence medium">
+                ★★★☆☆ CONTRIBUTING FACTOR
+            </span>
+
+            <p>
+                Changes in atmospheric gases, temperature and sea
+                levels may have stressed ecosystems.
+            </p>
+
+            <div class="theory-details">
+
+                <div>
+                    <strong>Cause</strong>
+                    <span>Environmental shifts</span>
+                </div>
+
+                <div>
+                    <strong>Effect</strong>
+                    <span>Ecosystem stress</span>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- SEA LEVEL -->
+
+        <article class="theory-card">
+
+            <div class="theory-number">
+                04
+            </div>
+
+            <div class="theory-icon">
+                🌊
+            </div>
+
+            <h3>Sea-Level Changes</h3>
+
+            <span class="evidence low">
+                ★★☆☆☆ POSSIBLE FACTOR
+            </span>
+
+            <p>
+                Major changes in sea level could have transformed
+                coastal habitats and food chains.
+            </p>
+
+            <div class="theory-details">
+
+                <div>
+                    <strong>Effect</strong>
+                    <span>Habitat loss</span>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- MULTIPLE -->
+
+        <article class="theory-card">
+
+            <div class="theory-number">
+                05
+            </div>
+
+            <div class="theory-icon">
+                🧩
+            </div>
+
+            <h3>Multiple Causes</h3>
+
+            <span class="evidence strong">
+                ★★★★★ COMBINED MODEL
+            </span>
+
+            <p>
+                One possibility is that volcanism and environmental
+                stress weakened ecosystems before the asteroid impact
+                delivered the final catastrophic shock.
+            </p>
+
+            <div class="theory-details">
+
+                <div>
+                    <strong>Idea</strong>
+                    <span>Combined stresses</span>
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOSSILS ================= -->
+
+<section class="fossils section" id="fossils">
+
+    <div class="fossil-header">
+
+        <div class="section-label">
+            06 • EVIDENCE FROM THE EARTH
+        </div>
+
+        <h2>
+            THE
+            <span>FOSSIL RECORD</span>
+        </h2>
+
+        <p>
+            Fossils are the clues scientists use to reconstruct
+            the ancient world.
+        </p>
+
+    </div>
+
+
+    <div class="fossil-grid">
+
+        <div class="fossil-card">
+
+            <div class="fossil-icon">
+                🦴
+            </div>
+
+            <h3>Bones</h3>
+
+            <p>
+                Fossilized bones reveal anatomy, growth and
+                evolutionary relationships.
+            </p>
+
+        </div>
+
+
+        <div class="fossil-card">
+
+            <div class="fossil-icon">
+                👣
+            </div>
+
+            <h3>Footprints</h3>
+
+            <p>
+                Trackways can reveal how dinosaurs moved,
+                travelled and sometimes interacted.
+            </p>
+
+        </div>
+
+
+        <div class="fossil-card">
+
+            <div class="fossil-icon">
+                🥚
+            </div>
+
+            <h3>Eggs</h3>
+
+            <p>
+                Fossil eggs and nests provide evidence about
+                reproduction and parental behavior.
+            </p>
+
+        </div>
+
+
+        <div class="fossil-card">
+
+            <div class="fossil-icon">
+                🪶
+            </div>
+
+            <h3>Feathers</h3>
+
+            <p>
+                Feather fossils help demonstrate the evolutionary
+                connection between dinosaurs and birds.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SURVIVORS ================= -->
+
+<section class="survivors section">
+
+    <div class="survivor-box">
+
+        <div class="survivor-icon">
+            🐦
+        </div>
+
+        <div>
+
+            <div class="section-label">
+                THE DINOSAURS DID NOT COMPLETELY DISAPPEAR
+            </div>
+
+            <h2>
+                BIRDS ARE
+                <span>LIVING DINOSAURS</span>
+            </h2>
+
+            <p>
+                Although non-avian dinosaurs vanished, one branch of
+                the dinosaur family tree survived: avian dinosaurs,
+                which evolved into modern birds.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= QUIZ ================= -->
+
+<section class="quiz section">
+
+    <div class="section-label">
+        07 • TEST YOUR KNOWLEDGE
+    </div>
+
+    <h2>
+        DINO
+        <span>CHALLENGE</span>
+    </h2>
+
+    <div class="quiz-box">
+
+        <div class="quiz-progress">
+            <span id="questionNumber">Question 1 of 5</span>
+            <div class="progress-bar">
+                <div id="progress"></div>
+            </div>
+        </div>
+
+        <h3 id="question">
+            Which dinosaur had three horns?
+        </h3>
+
+        <div id="answers" class="answers"></div>
+
+        <button id="nextQuestion" class="btn btn-primary next-btn" disabled>
+            Next Question →
+        </button>
+
+        <div id="quizResult" class="quiz-result"></div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-main">
+
+        <div class="footer-brand">
+
+            <a href="#home" class="logo">
+                <span>🦖</span>
+                <strong>Dino<span>Verse</span></strong>
+            </a>
+
+            <p>
+                Exploring Earth's prehistoric past,
+                one fossil at a time.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <div>
+                <h4>Explore</h4>
+                <a href="#dinosaurs">Dinosaurs</a>
+                <a href="#timeline">Timeline</a>
+                <a href="#fossils">Fossils</a>
+            </div>
+
+            <div>
+                <h4>Discover</h4>
+                <a href="#extinction">Extinction</a>
+                <a href="#theories">Theories</a>
+                <a href="#home">About</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            © 2026 DinoVerse
+        </span>
+
+        <span>
+            Built for prehistoric explorers 🦖
+        </span>
+
+    </div>
+
+</footer>
+
+
+<button id="backToTop" class="back-top">
+    ↑
+</button>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
